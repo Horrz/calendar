@@ -1,0 +1,44 @@
+{
+  "name": "calendar",
+  "version": "0.0.1",
+  "main": "index.js",
+  "author": "Martin Horatschek",
+  "license": "MIT",
+  "description": "A react calendar for go-tournaments",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Horrz/calendar"
+  },
+  "scripts": {
+    "serve": "live-server public/",
+    "build": "webpack --watch",
+    "test": "eslint src/**"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^1.2.0-14",
+    "@fortawesome/free-solid-svg-icons": "^5.1.0-11",
+    "@fortawesome/react-fontawesome": "0.1.0-11",
+    "google-map-react": "^0.25.0",
+    "live-server": "^1.2.0",
+    "prop-types": "^15.6.1",
+    "react": "^16.4.1",
+    "react-dom": "^16.4.1",
+    "react-table": "^6.8.6",
+    "geodist": "0.2.1"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.3",
+    "babel-loader": "^7.1.4",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-react": "^6.24.1",
+    "css-loader": "^0.25.0",
+    "eslint": "^4.19.1",
+    "eslint-config-airbnb": "^17.0.0",
+    "eslint-plugin-import": "^2.13.0",
+    "eslint-plugin-jsx-a11y": "^6.1.1",
+    "eslint-plugin-react": "^7.10.0",
+    "style-loader": "^0.13.1",
+    "webpack": "^3.12.0"
+  }
+}
