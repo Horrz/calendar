@@ -24,7 +24,7 @@ class SimpleMap extends React.Component {
             key={tournament.lat}
             lat={tournament.lat}
             lng={tournament.lng}
-            text={tournament.text}
+            name={tournament.name}
           />))}
       </GoogleMapReact>
     );

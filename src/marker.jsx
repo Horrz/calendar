@@ -7,7 +7,7 @@ class Marker extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      text: props.text,
+      name: props.name,
       lat: props.lat,
       lng: props.lng,
     };
@@ -18,12 +18,12 @@ class Marker extends React.Component {
   }
 
   handleClick() {
-    const { text, lat, lng } = this.state;
-    console.log(`${text}, ${lat}, ${lng}`);
+    const { name, lat, lng } = this.state;
+    console.log(`${name}, ${lat}, ${lng}`);
   }
 }
 Marker.propTypes = {
-  text: PropTypes.string.isRequired,
+  name: PropTypes.string,
   lat: PropTypes.number.isRequired,
   lng: PropTypes.number.isRequired,
 };
