@@ -12,7 +12,7 @@
   "scripts": {
     "serve": "live-server public/",
     "build": "webpack --watch",
-    "test": "eslint src/**"
+    "pretest": "eslint src/**"
   },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.0-14",
