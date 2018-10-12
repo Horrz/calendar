@@ -29,7 +29,7 @@ class Navigation extends React.Component {
           },
           {
             id: 'distance',
-            Header: 'distance',
+            Header: 'Entfernung (km)',
             accessor: tournament => getDistance({ lat: location.lat, lon: location.lng }, { lat: tournament.lat, lon: tournament.lng }, { unit: 'km' }),
           },
           ]}
