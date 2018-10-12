@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import PropTypes from 'prop-types';
 
-class SearchBox extends React.Component {
+class LocationSearchField extends React.Component {
   constructor(props) {
     super(props);
     this.onPlacesChanged = this.onPlacesChanged.bind(this);
@@ -41,8 +41,8 @@ class SearchBox extends React.Component {
   }
 }
 
-SearchBox.propTypes = {
+LocationSearchField.propTypes = {
   handleSetLocation: PropTypes.func.isRequired,
 };
 
-export { SearchBox as default };
+export { LocationSearchField as default };

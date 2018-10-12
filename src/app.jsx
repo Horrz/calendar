@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import SimpleMap from './map';
 import Navigation from './navigation';
-import SearchBox from './searchBox';
+import LocationSearchField from './locationSearchField';
 import generateDemoDate from './testUtils';
 
 
@@ -31,7 +31,7 @@ class App extends React.Component {
         <h1>
         Go Tournaments
         </h1>
-        <SearchBox handleSetLocation={this.handleSetLocation} />
+        <LocationSearchField handleSetLocation={this.handleSetLocation} />
         <div className="col-4">
           <Navigation tournaments={tournaments} location={location} />
         </div>
