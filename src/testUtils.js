@@ -16,7 +16,8 @@ function generateRandomTournament(number, array = []) {
   return generateRandomTournament(number - 1, array.concat([{
     lat: Math.random() * 10 + 45,
     lng: Math.random() * 10 + 6,
-    text: randomText(),
+    name: randomText(),
+    place: randomText(),
   }]));
 }
 
@@ -24,7 +25,9 @@ function generateDemoData() {
   return [{
     lat: 50.92,
     lng: 11.57,
-    text: 'Super tolles Go Turnier',
+    date: new Date(2018, 10, 20),
+    name: 'Super tolles Go Turnier',
+    place: 'Jena',
   }].concat(generateRandomTournament(9));
 }
 

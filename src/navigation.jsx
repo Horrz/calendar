@@ -15,16 +15,17 @@ class Navigation extends React.Component {
         <ReactTable
           data={tournaments}
           columns={[{
-            Header: 'Text',
-            accessor: 'text',
+            Header: 'Name',
+            accessor: 'name',
           },
           {
-            Header: 'lat',
-            accessor: 'lat',
+            id: 'date',
+            Header: 'Datum',
+            accessor: tournament => tournament.date && `${tournament.date}`,
           },
           {
-            Header: 'lng',
-            accessor: 'lng',
+            Header: 'Ort',
+            accessor: 'place',
           },
           {
             id: 'distance',
