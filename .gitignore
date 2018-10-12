@@ -1,0 +1,9 @@
+# IntelliJ IDEA
+.idea/
+
+# installed dependencies
+node_modules/
+
+# generated code
+public/
+
